@@ -3,7 +3,7 @@
     background: #42104e;
     color: #fff;
   }
-  
+ 
   #branding h1 {
     color: #fff;
   }
@@ -19,11 +19,11 @@
   }
   
   div.breadcrumbs a {
-    color: #333;
+    color: rgb(248, 245, 245);
   }
   
   .module h2, .module caption, .inline-group h2 {
-    background: #96739b;
+    background: #76739b;
   }
   
   .button, input[type=submit], input[type=button], .submit-row input, a.button {

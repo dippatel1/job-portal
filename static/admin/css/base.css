@@ -62,8 +62,8 @@
     --primary: #264b5d;
     --primary-fg: #eee;
 
-    --body-fg: #eeeeee;
-    --body-bg: #121212;
+    --body-fg: #040202;
+    --body-bg: #ffffff;
     --body-quiet-color: #e0e0e0;
     --body-loud-color: #ffffff;
 
@@ -101,7 +101,7 @@ body {
     font-size: 14px;
     font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
     color: var(--body-fg);
-    background: var(--body-bg);
+    background-color: white;
 }
 
 /* LINKS */
@@ -153,6 +153,7 @@ h1 {
     font-weight: 300;
     font-size: 20px;
     color: var(--body-quiet-color);
+    background-color: white;
 }
 
 h2 {

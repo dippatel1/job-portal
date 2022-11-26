@@ -5,7 +5,7 @@
 
 {% block content %}
     <div class="page-heading about-heading header-text" style="background-image: url(https://images.unsplash.com/photo-1516201580490-33550d32de5c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);">
-    <div class="container">
+    <div class="container" style="margin:10rem">
       <div class="row">
         <div class="col-md-12">
           <div class="text-content">
@@ -51,8 +51,11 @@
             </div>
           </div>
 
-          <div>
-            <img src="{{ job.main_image.url }}" alt="" class="img-fluid wc-image">
+          <div style="width:15rem; height: 20rem;padding:2rem;border-radius: 37px;
+          background: #ffffff;
+          box-shadow:  23px 23px 47px #bdbdbd,
+                       -23px -23px 47px #ffffff;">
+            <img style="border-radius:1.5rem%" src="{{ job.main_image.url }}" alt="" class="img-fluid wc-image">
           </div>
 
           <br>

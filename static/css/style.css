@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -296,10 +297,27 @@ header .navbar {
 	color: #7532f1;
 }
 
+.c11{
+	height:20rem;padding:2rem;border-radius: 20px;
+            background: #ffffff;
+            box-shadow:  23px 23px 47px #bdbdbd,
+                         -23px -23px 47px #ffffff;
+                         
+                         
+                         overflow :hidden;
+      white-space: nowrap;
+      
+      text-overflow: ellipsis;
+}
+.c11:hover{
+	height:35rem;
+}
+
 .product-item {
 	border: 1px solid #eee;
 	margin-top: 30px;
 	margin-bottom: 30px; 
+	
 }
 
 .product-item .down-content {

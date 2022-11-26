@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class UserManager(BaseUserManager):
     #Define a model manager for User model with no username field.
-
+    #we can optionally serialize managers into migrations and have them available in RunPython operations. This is done by defining a use_in_migrations attribute on the manager class:
     use_in_migrations = True
 
     def _create_user(self, email, password, **extra_fields):

@@ -6,10 +6,13 @@
 
   <!-- Banner Starts Here -->
   <div class="banner header-text">
-    <div class="banner-item">
+    <div class="banner-item" style="background:white;">
   <div class="container text-center">
-  <div class="home-search p-5">
-      <h1 class="display-4 mb-4" id="showcase-info">
+  <div class="home-search p-5" style="border-radius: 37px;
+  background: #ffffff;
+  box-shadow:  23px 23px 47px #bdbdbd,
+               -23px -23px 47px #ffffff;">
+      <h1 class="display-4 mb-4" id="showcase-info" style="color:#7532f1; margin:2rem;">
        Find Your Next Great Role 
       </h1>
       <div class="search">
@@ -70,8 +73,11 @@
 
   {% for job in jobs %}
     <div class="col-md-4">
-    <div class="product-item">
-    <a href="{% url 'job' job.id %}"><img src="{{ job.main_image.url }}" alt=""></a>
+    <div class="product-item" style=" height: 30rem;padding:2rem;border-radius: 37px;
+    background: #ffffff;
+    box-shadow:  23px 23px 47px #bdbdbd,
+                 -23px -23px 47px #ffffff;">
+    <a href="{% url 'job' job.id %}"><img style="height:12rem;" src="{{ job.main_image.url }}" alt=""></a>
     <div class="down-content">
     <a href="{% url 'job' job.id %}"><h4> {{job.title}}</h4></a>
     <h6>${{job.salary | intcomma}}</h6>

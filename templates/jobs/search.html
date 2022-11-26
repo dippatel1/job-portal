@@ -69,8 +69,11 @@
 {% if jobs %}
   {% for job in jobs %}
     <div class="col-md-6 col-lg-4 mb-4">
-    <div class="product-item">
-    <a href="{% url 'job' job.id %}"><img src="{{ job.main_image.url }}" alt=""></a>
+    <div class="product-item" style="height:35rem;padding:2rem;border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  23px 23px 47px #bdbdbd,
+                 -23px -23px 47px #ffffff;">
+    <a href="{% url 'job' job.id %}"><img style="height:15rem;" src="{{ job.main_image.url }}" alt=""></a>
     <div class="down-content">
     <a href="{% url 'job' job.id %}"><h4> {{job.title}}</h4></a>
     <h6>${{job.salary | intcomma}}</h6>

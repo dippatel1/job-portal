@@ -6,7 +6,7 @@
 {% block content %}
   
   <!-- Page Content -->
-  <div class="page-heading about-heading header-text" style="background-image: url(https://images.unsplash.com/photo-1576849058607-da9d05480027?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);">
+  <div class="page-heading about-heading header-text" style="background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-simple-jobs-to-sum-up-business-image_20826.jpg)">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -21,14 +21,24 @@
 
   <!-- Jobs -->
   <section id="jobs" class="py-4">
-    <div class="container">
+    <div class="container" >
       <div class="row">
       {% if jobs %}
 
           {% for job in jobs %}
             <div class="col-md-6 col-lg-4 mb-4">
-            <div class="product-item">
-              <a href="{% url 'job' job.id %}"><img src="{{ job.main_image.url }}" alt=""></a>
+              
+            <div class="product-item c11" style="padding:2rem;border-radius: 20px;
+            background: #ffffff;
+            box-shadow:  23px 23px 47px #bdbdbd,
+                         -23px -23px 47px #ffffff;
+                         
+                         
+                         overflow :hidden;
+      white-space: nowrap;
+      
+      text-overflow: ellipsis;" >
+              <a href="{% url 'job' job.id %}"><img style="height:12rem;width:18rem;" src="{{ job.main_image.url }}" alt=""></a>
               <div class="down-content">
                 <a href="{% url 'job' job.id %}"><h4> {{job.title}}</h4></a>
 
